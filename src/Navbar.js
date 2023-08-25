@@ -1,11 +1,32 @@
-import React from 'react'
+import React from "react";
+import logo from "./logo.svg";
+import {FaBars, FaFacebook, FaLinkedin, FaTwitter} from 'react-icons/fa';
+// import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div>
-      <h1>Navbar</h1>
-    </div>
-  )
+    <nav>
+      <div className="nav-center">
+        <div className="nav-header">
+          <img src={logo} alt="logo" />
+          <button className="nav-toggle"><FaBars/></button>
+        </div>
+        <div className="links-container show-container">
+          <ul className="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Products</a></li>
+          </ul>
+        </div>
+        <ul className="social-icons">
+          <li><a href="https://www.twitter.com" target="_blank"><FaTwitter/></a></li>
+          <li><a href="https://www.facebook.com" target="_blank"><FaFacebook/></a></li>
+          <li><a href="https://www.linkedin.com" target="_blank"><FaLinkedin/></a></li>
+        </ul>
+      </div>
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;
