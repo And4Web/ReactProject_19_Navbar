@@ -26,6 +26,16 @@ export const links = [
     url: '/profile',
     text: 'profile',
   },
+  // {
+  //   id: 6,
+  //   url: '/articles',
+  //   text: 'articles',
+  // },
+  // {
+  //   id: 7,
+  //   url: '/tutorials',
+  //   text: 'tutorials',
+  // }
 ];
 
 export const social = [
